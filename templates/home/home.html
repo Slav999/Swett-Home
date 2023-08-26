@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<table class="table mt-5 table-bordered table-striped table-hover">
+    <thead class="table-dark">
+    <tr>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Students Quantity</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for user in users %}
+    <tr>
+        <td>
+            <a href=''>{{user.name}}</a>
+        </td>
+        <td><button class="btn btn-primary">Buy</button></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
