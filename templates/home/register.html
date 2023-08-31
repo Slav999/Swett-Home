@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="pb-4 text-center">Регистрация</h1>
+        <div class="d-flex justify-content-center">
+            <form style="width: 50%" method="post">
+                {% csrf_token %}
+                <label class="form-label" for="email">Email:</label>
+                <input style="border: solid 1px" class="form-control col-md-6" type="email" id="email" name="email"><br><br>
+
+                <label class="form-label" for="name">Имя:</label>
+                <input style="border: solid 1px" class="form-control" type="text" id="name" name="name"><br><br>
+
+                <label class="form-label" for="password">Пароль:</label>
+                <input style="border: solid 1px" class="form-control" type="password" id="password" name="password"><br><br>
+                <div class="d-flex justify-content-center">
+                    <button style="width: 50%" type="submit" class="btn btn-primary">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
