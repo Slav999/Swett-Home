@@ -5,3 +5,42 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py[cod]
+
+# Django
+*.pot
+*.log
+local_settings.py
+
+# Папки с медиафайлами и статикой
+/media/
+/static/
+
+# Папка с виртуальным окружением
+venv/
+ENV/
+
+# Файлы и директории, создаваемые различными IDE и редакторами
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# MacOS
+.DS_Store
+
+# Node.js
+node_modules/
+
+# Разные бэкапы и временные файлы
+*.bak
+*.tmp
+*~
+
+# Файлы резервных копий базы данных
+*.dump
+
+# Файлы конфигурации базы данных
+database.ini
+*.conf
